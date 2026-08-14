@@ -1,0 +1,27 @@
+.travel-aside {
+  position: relative;
+  margin-top: 32px;
+  padding: 19px 22px 17px 25px;
+  border-left: 2px solid var(--yellow);
+  background: linear-gradient(90deg, rgba(230, 181, 77, .1), transparent);
+}
+
+.travel-aside::before {
+  content: "✦";
+  position: absolute;
+  left: -8px;
+  top: -10px;
+  padding: 3px;
+  color: var(--orange);
+  background: #f8f3ea;
+  font-size: .8rem;
+}
+
+.story.reverse .travel-aside::before { background: #fff; }
+.travel-aside b { color: var(--green); font: 1rem Georgia, "Songti SC", serif; }
+.travel-aside p { margin: 8px 0 11px !important; color: #6b756f !important; font-size: .76rem; line-height: 1.75 !important; }
+.travel-aside small { color: #9a806c; font-size: .62rem; letter-spacing: .08em; }
+
+@media (max-width: 850px) {
+  .travel-aside { margin-top: 28px; }
+}
